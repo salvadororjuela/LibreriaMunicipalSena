@@ -1,0 +1,53 @@
+﻿body {
+    height: auto;
+}
+.upper {
+    display: block;
+    float: left;
+    margin-right: 70px;
+}
+
+.inner {
+    display: none;
+    background-color: seagreen;
+    padding-right: 10px;
+}
+
+.inner a {
+        color: grey;
+}
+
+a:hover {
+    color: white;
+}
+
+.upper:hover {
+    background-color: seagreen;
+    color: white;
+}
+
+.upper:hover .inner {
+    display: block;
+    background-color: seagreen;
+    color: white;
+}
+
+.upper > .inner > li > a {
+    padding: 10px 10px;
+}
+
+.inner:hover a {
+    color: lightgrey;
+}
+
+.inner:hover a:hover {
+    color: white;
+}
+
+.centrado {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
